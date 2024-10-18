@@ -10,7 +10,7 @@
         <StackPanel>
             <TextBlock Text="Введите текст:" Margin="0,0,0,10" HorizontalAlignment="Center"/>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Текст:" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                <TextBlock Text="Текст" VerticalAlignment="Center" Margin="5,0,0,0"/>
                 <TextBox Name="NameTextBox" Width="311" ToolTip="Введите ваш текст здесь..." Height="52" />
             </StackPanel>
             <Button Content="Сохранить" Margin="94,10,106,0"/>
