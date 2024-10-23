@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,7 +35,32 @@ namespace WpfApp1
             }
             else
             {
-                MessageBox.Show($"Вы ввели имя: {name}", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                if (prov(name))
+                {
+                    MessageBox.Show("Пожалуйста, используйте латиницу.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else 
+                {
+                    if (char.IsUpper(name[0]))
+                    {
+                        MessageBox.Show($"Вы ввели имя: {name}", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    else 
+                    {
+                        MessageBox.Show("Пожалуйста, начните с заглавной буквы.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    }
+                }
+            }
+        }
+        private bool prov (string text)
+        {
+            if (text.Any(wordByte => wordByte > 127))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
