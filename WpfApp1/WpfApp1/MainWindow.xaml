@@ -5,15 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="114.889" Width="209.859">
+        Title="MainWindow" Height="203.723" Width="388.028">
     <Grid>
         <StackPanel>
-            <TextBlock Text="Введите имя:" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            <TextBlock Text="Введите текст:" Margin="0,0,0,10" HorizontalAlignment="Center"/>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Name:" VerticalAlignment="Center" Margin="5,0,0,0"/>
-                <TextBox Name="NameTextBox" Width="150" ToolTip="Введите ваше имя здесь..." />
+                <TextBlock Text="Текст" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                <TextBox Name="NameTextBox" Width="311" ToolTip="Введите ваш текст здесь..." Height="52" />
             </StackPanel>
-            <Button Content="Ввод" Click="SubmitButton_Click" Margin="40,10,46,0"/>
+            <Button Content="Сохранить" Margin="94,10,106,0"/>
+            <Slider Height="32" Margin="56,0,53,0"/>
         </StackPanel>
     </Grid>
 </Window>
