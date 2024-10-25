@@ -14,6 +14,7 @@
                 <TextBox Name="NameTextBox" Width="311" ToolTip="Введите ваш текст здесь..." Height="52" />
             </StackPanel>
             <Button Content="Сохранить" Margin="94,10,106,0"/>
+            <Slider Height="32" Margin="56,0,53,0"/>
         </StackPanel>
     </Grid>
 </Window>
